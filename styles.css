@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.menu-toggle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #e2e2e2;
+    padding: 60px 20px;
+}
+
+#about {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+#services {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-item h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+#contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.contact-item h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.contact-item p a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.contact-item p a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e65c00;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list a {
+        padding: 15px;
+        border-bottom: 1px solid #575757;
+    }
+
+    .nav-list a:last-child {
+        border-bottom: none;
+    }
+}
